@@ -1,0 +1,12 @@
+% generate random variable X and Y
+X = randn(10,1);
+Y = randn(m,1);
+
+A = randn(p,n);
+B = randn(p,m);
+
+% Cov(AX, BY) and A*cov(X,Y)*B'
+result1 = cov(A*X, B*Y);
+result2 = A*cov(X,Y)*B';
+
+
